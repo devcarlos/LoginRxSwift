@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		561669A924CBF49300DBD2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561669A724CBF49300DBD2E3 /* Main.storyboard */; };
 		561669AB24CBF49600DBD2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561669AA24CBF49600DBD2E3 /* Assets.xcassets */; };
 		561669AE24CBF49600DBD2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561669AC24CBF49600DBD2E3 /* LaunchScreen.storyboard */; };
+		56D37CDF24CBFA4E00A30EF2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D37CDE24CBFA4E00A30EF2 /* LoginViewModel.swift */; };
 		CF58BE5F4A8E924E98E1E6EA /* Pods_LoginRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D04C8A001D44A5527D0E1D /* Pods_LoginRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		561669AA24CBF49600DBD2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		561669AD24CBF49600DBD2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		561669AF24CBF49600DBD2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D37CDE24CBFA4E00A30EF2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		637607B847AE86A9D517BE48 /* Pods-LoginRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginRxSwift.release.xcconfig"; path = "Target Support Files/Pods-LoginRxSwift/Pods-LoginRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		65D04C8A001D44A5527D0E1D /* Pods_LoginRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,13 +67,38 @@
 			children = (
 				561669A124CBF49300DBD2E3 /* AppDelegate.swift */,
 				561669A324CBF49300DBD2E3 /* SceneDelegate.swift */,
-				561669A524CBF49300DBD2E3 /* ViewController.swift */,
-				561669A724CBF49300DBD2E3 /* Main.storyboard */,
+				56D37CDD24CBFA3700A30EF2 /* ViewModels */,
+				56D37CDB24CBFA1300A30EF2 /* Controllers */,
+				56D37CDC24CBFA2800A30EF2 /* Views */,
 				561669AA24CBF49600DBD2E3 /* Assets.xcassets */,
-				561669AC24CBF49600DBD2E3 /* LaunchScreen.storyboard */,
 				561669AF24CBF49600DBD2E3 /* Info.plist */,
 			);
 			path = LoginRxSwift;
+			sourceTree = "<group>";
+		};
+		56D37CDB24CBFA1300A30EF2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				561669A524CBF49300DBD2E3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56D37CDC24CBFA2800A30EF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				561669AC24CBF49600DBD2E3 /* LaunchScreen.storyboard */,
+				561669A724CBF49300DBD2E3 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56D37CDD24CBFA3700A30EF2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				56D37CDE24CBFA4E00A30EF2 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		8FCD988986533B14868F0428 /* Pods */ = {
@@ -80,7 +107,6 @@
 				3730E253ABAB7B33965CC64A /* Pods-LoginRxSwift.debug.xcconfig */,
 				637607B847AE86A9D517BE48 /* Pods-LoginRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D37CDF24CBFA4E00A30EF2 /* LoginViewModel.swift in Sources */,
 				561669A624CBF49300DBD2E3 /* ViewController.swift in Sources */,
 				561669A224CBF49300DBD2E3 /* AppDelegate.swift in Sources */,
 				561669A424CBF49300DBD2E3 /* SceneDelegate.swift in Sources */,
